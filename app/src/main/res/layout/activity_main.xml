@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.rama_.myapplication.MainActivity">
+
+    <TextureView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textureView" />
+
+    <Button
+        android:text="Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        app:layout_anchor="@+id/textureView"
+        app:layout_anchorGravity="bottom|left"
+        android:layout_gravity="top|right" />
+
+    <Button
+        android:text="Video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        app:layout_anchor="@+id/textureView"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_gravity="top|left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSign" />
+
+</android.support.design.widget.CoordinatorLayout>
